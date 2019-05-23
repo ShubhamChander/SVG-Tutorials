@@ -1,0 +1,54 @@
+As you have seen in the first tutorial, it is really simple to create shapes and text. It is also simple to easily change
+key characteristics about the creations such as colour, size and positioning on the screen. However, in some cases, most of 
+the requirements that people have are not so simple. For example, perhaps, you want shapes/text to appear together, or
+you want to change the characteristics of more than one shapes. With the knowledge that you have now, you would go to 
+each individual shape and modifiy it. 
+
+SVG allows elements of the shape elements to exist. So, that means that you can easily treat more than one shape/texts
+as one single element and modify all of them at once, to either change characteristics such as colour, size and shape
+for all of the selected shapes/texts. In order to change the characteristics, you can use the transformation function introduced
+in Tutorial 02. 
+
+Essentially, all you can do now, is treat multiple shapes as one single shape. Try to solve the problems using that mindset,
+of changing one shape, which in itself is comprised of multiple shapes.
+
+*Note: In this tutorial, I have mentioned a few elements as they allow the more general cases of uses to be fulfilled.
+There are tons of specific elements in SVG that allow you to specifically handle minute details. They all follow
+a similar structure. 
+
+
+Visit GroupingElementEx.html for an example of grouping shape elements together.
+
+Visit TextSpanEx.html for an example of positioning text elements. 
+
+Visit UseEx.html for an example of Use element. 
+
+
+
+
+Problem 1)
+	
+	Create multiple simple shapes of various characteristics and transform them all as a single shape according to the following:
+	
+		A) Scale the shapes to be bigger than the original sizes, using scale
+
+		B) Change the positions to be right of the original positions, using translate
+
+		C) Skew the shapes by 17 degrees in the X-direction , using skew 
+
+
+Problem 2)
+	
+	A) Create a simple text element containing the texts, "Hello World, My name is __________ ". In the dashed space, write your name.
+
+	B) After doing part A, position the texts such that:
+	
+		A) the texts create an "X" sign 
+
+Problem 3)
+	
+	Using the shapes from the example, 
+	
+	A) Apply the same transformation changes on the copied element coloured green, not the original as in Problem 1). However this time use, <use>
+
+

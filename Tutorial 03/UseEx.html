@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- 
+Instead of positioning shapes/text relative to another elements, you can also just place
+a shape in a position by itself.
+
+You can also modify the characteristics of the element, assuming that the shape has default characteristic.
+
+-->
+
+<svg width = "900", height= "900">
+	
+	
+	<!-- A key point to note here --> 
+	<!-- 
+		If the shape element already has some characteristic, such as colour, then the colour
+		will remain the same for all the copies made by using <use>
+		
+		Try adding the colour blue on the rectangle on line 23
+	-->
+	<rect id="Rect" x="100" y="100" width="200" height="300" ></rect>
+	
+	<use href="#Rect" x="300" y ="5" fill="green" ></use>
+	
+	<use href="#Rect" x="550" y ="5" fill="blue" transform="skewX(15)"></use>
+
+</svg>
+
+</body>
+</html>
