@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+Used following sites: 
+https://www.tutorialspoint.com/svg/svg_interactivity.htm
+http://tutorials.jenkov.com/svg/scripting.html
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousemove
+http://www.petercollingridge.co.uk/tutorials/svg/interactive/javascript/
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform
+https://webdesign.tutsplus.com/tutorials/how-to-use-animatetransform-for-inline-svg-animation--cms-22296
+
+https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_animatemotion
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform
+https://webdesign.tutsplus.com/tutorials/how-to-use-animatetransform-for-inline-svg-animation--cms-22296
+
+-->
+
+
+<svg width="900" height="900">
+	
+	
+	<g>
+	
+	<!-- Notice how begin in both <animate> does not have a seconds value, it only has "click". This allows for some event handling to take place, meaningthe skew transformation 
+	will only happen once you click on it. Try changing the begin value to actual seconds, like "0s" or "5s" and see what happens.
+	-->
+	
+	<circle cx="106" cy="250" r="50" style="fill:black;stroke-width:1">
+		<animateTransform attributeName="transform" 
+			type="translate"
+			from= 50,5
+			to = 150,750
+			begin= "click"
+			dur="5s"
+			repeatCount="indefinite"
+		/>
+	</circle>
+	<animateTransform attributeName="transform" type="skewX" from= 0 to = 100 begin= "click" dur="5s" repeatCount="indefinite"/>
+	</g>
+
+</svg>
+</body>
+</html>
+
+
+
+
+

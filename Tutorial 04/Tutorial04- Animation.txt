@@ -1,0 +1,32 @@
+Animation has been used in web development for a long time. Needless to say, animations are also heavily used in svg. 
+
+In SVGs, you can create animations using the animation tag <animation>, while specifying the type of animation being done. 
+
+There are many types of animation such as, colours disappearing/appearing, objects moving across the screen, and shapes
+change size or shapes. For each of these types of animations there are different animation tags. 
+They include:
+		<animate>
+		<animateMotion>
+		<animateTransform>
+		<animateColour> (This tag is not being used anymore, as other animate tag can handle this simple task
+of changing colour. But it is good to know. <animate> replaces this tag)
+
+Take a look at some example code in the tutorial 04 files, namely,
+	
+	- animateEx.html
+	- animateTransformEx.html 
+	- animateMotionEx.html 
+
+Problem 1)
+	Create a path across the screen for an increasing sized circle and show that path, using <animateTransform>
+	the circle. 
+
+Problem 2)
+	Open file Problem02.html and study the code. Afterwards, run the code on a browser and observe the animation in the <animateMotion>. Notice how it starts off moving
+in a curved direction and then goes off screen. It is then reapears from the side of the screen. Try changing up some of the values in path, and observe the 
+changes appear on the browser.
+Bonus) Should you want, create another shape, and recreate the motion, however this time, add some event handling to it, such that
+When the rectangle is clicked upon, it should begin.
+		
+	
+
