@@ -1,0 +1,56 @@
+<!-- This cssEx file shows examples of css code -->
+
+<!DOCTYPE html>
+<html>
+
+
+<!-- 
+	As you can see below, all the characteristics of the shape elements are now written in css format. 
+	
+	The css inline format is all within the <style> tag. 
+
+	The CDATA format allows for the svg data in between the cdata tag to be interpreted in the same way as if the data was in the svg format.
+	
+-->
+
+
+<body>
+
+<svg width = "500", height="500" >
+
+	<style>
+	 <![CDATA[ 
+    .rectClass {
+      fill: orange;
+	  transform : scale(2,2);
+	}
+	.rectClass1{
+		fill: blue;
+	}
+	
+	.rectClass2{
+		fill: green;
+		transform : skewY(16deg) 
+	}
+	
+	.rectClass3{
+		fill:purple;
+		transform : rotate(45deg)
+	
+	}
+    ]]> 
+	
+	</style>
+	
+	<rect class="rectClass" id="rectclass" x="0" y="0" width="50" height="50"></rect>
+	
+	<rect class="rectClass1" id="rectclass" x="200" y="" width="50" height="50"></rect>
+	
+	<rect class="rectClass2" id="rectclass" x="300" y="0" width="50" height="50"></rect>
+	
+	<rect class="rectClass3" id="rectclass" x="500" y="-150" width="50" height="50"></rect>
+	
+<svg>
+
+<body>
+<html>

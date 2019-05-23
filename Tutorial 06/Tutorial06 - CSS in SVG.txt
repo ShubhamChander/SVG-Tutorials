@@ -1,0 +1,16 @@
+Now that we are comfortable with pure SVG by itself, we can use CSS to rewrite some parts of the pure SVG code in a cleaner way. 
+
+CSS has been used in HTML5 as a way to make elements more cleaner and pretty. The same is true for SVG
+
+For the problems, we shall be rewriting some svg code that we have written in the past, with css.
+
+Look at the cssEx file. 
+
+
+
+
+Problem 1)
+
+	Since css is essentially just rewriting the same svg code in a different manner, write out any transformation code that has been written
+	in the cData format. 
+
