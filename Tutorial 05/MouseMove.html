@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Every time the mouse enters the black box on the screen, the onmouseenter event is triggered and a function
+called detectMouse(e) is triggered. 
+-->
+<svg width = "500", height="500" >
+
+	<rect id="rect" x="0" y="0" width="700" height="500" style="fill:black"
+	onmouseenter="detectMouse(event)"
+	
+<svg>
+
+<script>
+function detectMouse(e){
+	var x = e.clientX;
+	var y = e.clientY;
+	var coor = "Coordinates: (" + x + "," + y + ")";
+	alert("Mouse has entered at coordinate "+ coor);
+}
+</script>
+<body>
+<html>

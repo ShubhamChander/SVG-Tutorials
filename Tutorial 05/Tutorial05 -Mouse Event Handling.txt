@@ -1,0 +1,38 @@
+Like Mouse handling events in HTML 5, svg can also handle mouse event. 
+
+Mouse Event handling events are defined as those events that are caused by the user somehow
+interacting with the svg elements, mainly by the cursor. Events include either the mouse
+clicking on the said element or just hovering over it. 
+
+To handle simple mouse events, there are already "built-in handlers" such as onmouseleave, onmouseenter, onmousemove, that will trigger once the event occurs.
+
+There are also simple functions such as setAttribute that will run once an event is triggered. 
+
+For more complex changes, you can use Jacascript to create functions that will run once an event is triggered. 
+
+Preliminary:
+
+	Visit the mouseEventEx page and hover the mouse on the black circle. It shall disappear.
+	When you remove your mouse from on top of the now invisible circle, it shall turn red. 
+ 
+	Notice how it is hardly three lines of codes. 
+
+	For a more exciting and slightly more complicated with more a slightly more complex code base, 
+	move on to the wireLoop game page. 
+
+	
+	Like HTML5, you can pass in the mouse event and essentially manipulate the DOM model
+
+
+Problem 1)
+	Understand the BoxMove game, and change the game as follows:
+	
+	A) Change the game such that when black box detects the mouse,
+	the red box moves
+
+	B) Change the game such that when red box detects the mouse, the black box
+	moves in only one direction, either x or y. 
+
+Problem 2)
+	Everytime a mouse moves, a shape disappears on screen. There are many ways you can complete this. You can either have shape elements already present that change
+	colour, or you can set a shape shape on the browser page through the javascript function.

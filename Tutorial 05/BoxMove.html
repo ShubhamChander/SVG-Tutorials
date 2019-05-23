@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Every time the mouse enters the black box on the screen, the onmouseenter event is triggered and a function
+called detectMouse(e) is triggered. 
+-->
+
+
+<!-- You can add a single event handler function to one svg element or multiple svg elements--> 
+<svg width = "500", height="500" >
+
+	<rect id="rectChange" x="0" y="0" width="50" height="50" style="fill:black"
+	onmouseenter="detectMouse(event)"></rect>
+	
+	<rect id="rectChange1" x="10" y="50" width="50" height="50" style="fill:red"
+	onmouseenter="detectMouseR(event)"></rect>
+	
+<svg>
+
+<script>
+function detectMouse(e){
+
+	var x = Math.floor((Math.random()*400)+1);
+	var y = Math.floor((Math.random()*400)+1);
+	document.getElementById("rectChange").setAttribute("x",x);
+	document.getElementById("rectChange").setAttribute("y",y);
+	
+}
+
+</script>
+<body>
+<html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- You can add a single or many event handler function to one svg element or multiple svg elements--> 
+
+<!-- In this simple example, there are two types of event handler. A) when the page is loaded, the AddBox function is triggered
+	B) When the mouse enters the black box, the detectMouse function is triggered.
+	
+	As you can see there are also multiple event handlers on a single svg element
+ -->
+
+
+<svg width = "500", height="500" onload="AddBox()">
+
+	<rect id="rectChange" x="0" y="0" width="500" height="500" style="fill:black"
+	onmouseenter="detectMouse(event)" onmouseleave="detectMouseleave(event)"></rect>
+	
+<svg>
+
+<script>
+function AddBox(e){
+	
+	alert("This alert occurs when page is loaded");
+}
+
+function detectMouse(e){
+	
+	alert("Mouse has been detected to be on box");
+
+}
+
+function detectMouseleave(e){
+	alert("Mouse has left the box");
+}
+</script>
+<body>
+<html>

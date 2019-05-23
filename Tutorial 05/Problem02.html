@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- One important rule to remember is that if one line has an error in it, then that line and all the lines below it will not run. 
+	
+	Try changing one of the IDs of the rectangles in the <rect tag> but not the javascript function.
+
+-->
+
+<svg width = "500", height="500" onmousemove="RemoveCircle()">
+
+	<rect id="rectChange" x="10" y="10" width="50" height="50" ></rect>
+	
+	<rect id="rectChange1" x="50" y="100" width="50" height="50" ></rect>
+	
+	<rect id="rectChange2" x="150" y="400" width="50" height="50" ></rect>
+	
+	<rect id="rectChange3" x="350" y="100" width="50" height="50" ></rect>
+	
+	<rect id="rectChange4" x="50" y="400" width="50" height="50" ></rect>
+	
+	<rect id="rectChange5" x="50" y="300" width="50" height="50" ></rect>
+	
+	
+	
+
+	
+<svg>
+
+<script>
+function RemoveCircle(){
+	
+document.getElementById("rectChange").setAttribute('fill','white');
+document.getElementById("rectChange1").setAttribute('fill','white');
+document.getElementById("rectChange2").setAttribute('fill','white');
+document.getElementById("rectChange3").setAttribute('fill','white');
+document.getElementById("rectChange4").setAttribute('fill','white');
+document.getElementById("rectChange5").setAttribute('fill','white');
+
+}
+
+</script>
+<body>
+<html>
