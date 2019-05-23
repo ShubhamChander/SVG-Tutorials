@@ -1,0 +1,59 @@
+SVG or Scalable Vector Graphics are basically another way to draw images. Using SVG, you can more easily draw images or shapes.
+You can also store svg shapes into files. For more information refer to https://www.w3schools.com/graphics/svg_intro.asp
+
+
+There are multiple ways you can create shapes. You can each use the general shape format tag or the custom made shape tag.
+In the general shape format, you have to provide with the shape code with the information for the shape itself.
+
+For example, for circle, you have to provide it with x and y coordinate and a radius value.
+For rectangle, you have to provide it with x, y coordinate, width and height value. 
+
+For custom made shape, you can create an outline of the shape using the path tag. 
+
+
+Preliminary:
+	Run the Tutorial01_server by opening command terminal in the file typing "node Tutorial01_server.js"
+	Open Google Chrome and in the address bar type in "localhost:3000"
+	You should see a page with "Default SVG page"
+	
+	
+	Next, In the address bar, type in "localhost:3000/SVG_Drawing.html"
+	You should see a page with shapes that are of different sizes and shapes
+	You should also see a custom made shapes
+
+
+	Finally, In the address bar, type in "localhost:3000/SVG_Texts.html"
+	You should see a page with texts that are of different sizes and shapes
+
+
+
+Problem 1)
+	
+	Create Batman symbol as shown on screen 
+
+Problem 2)
+	
+	Create green lantern symbol as shown on screen 
+
+Problem 3) 
+	
+	Create Nike symbol as shown on screen 
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	
