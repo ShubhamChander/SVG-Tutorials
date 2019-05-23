@@ -1,0 +1,108 @@
+Drawing with SVGs allows us to draw pretty much any shape imaginable, as shown in Tutorial 01. This tutorial 02 will help you understand more about what more "features" 
+does SVG have to offer. SVG uses math(particularly linear algebra) to draw out and manipulate the images. 
+
+
+Preliminary Material: 
+
+Zooming of SVG Images versus Zooming of Raster Images:  
+	In SVG, Images and Drawings can be zoomed in and not be pixelated. This allows for possibliitees to happen in the drawing. 
+	Images that when zoomed in and be pixalated are known as "Raster Images". The reason why images like that exist is because the images are placed on the pixels
+	themselves. Therefore, its static. You can only change it by drawing on top of it. 
+	If you zoom in far enough, eventually you run out of the sub-pixels and see the actual minute pixels
+
+	SVG Images, on the other hand are not static in the sense that they have the ability change the size of the images as required. Because these images are created using
+	vecctors, they can easily span the image within the vector space. So, when you zoom in or out, you are essentially seeing the same image spanned. This allows 
+	for the image to be dynamic and not be placed on the pixel and never change. 
+
+
+ViewBox, Viewport and Preserve Aspect Ratio:
+	In the previous Tutorial, you were instructed to draw simple shapes and famous logos. 
+	In the code example abive, you were told to provide a width and a height of the svg in which all of your drawings were to be within
+	The dimensions that you provided, were the ViewPort dimension. In the viewport, you can create any shapes, provided that the shape falls within
+	the viewport dimension. 
+	A ViewPort allows you to focus in on a specific shape, or "zoom in". 
+
+
+SVG Transformation functions : 
+	1) Translate:
+		The Translate function allows you to shift the positions of your Drawings and move it other coordinates within ViewPort without modifying size.
+	
+		Parameter used: x,y to shift the drawings to.
+	2) Rotate:
+		The Rotate function allows you to rotate your Drawing by some degrees so the coordinates of your drawing
+		will appear rotated, thus giving a new perspective on a drawing without changing size and position
+
+		Parameters used: a, x, y, a for degree of rotation, x and y for point of rotation
+	3) Scale: 
+		The Scale function allows you to increase/decrease the size of your drawing without changing the ratio. Due to the zooming in/out feature of not allowing images
+		to look pixalated, you can scale your drawing to any size and your drawing will not be pixalated
+
+		Paramters used: x and y to scale the shape in the x direction and y direction
+	4) Skew: 
+		The Skew function allows you to skew your drawing by a degree. You can either skew it in the X-direction
+		or in the Y-direction
+
+		Parameters used: x for degree of skewed shape
+	
+	You can create these transformation by mentioning the transform attribute in the shape.
+
+	For example, 
+			changing a rectangle to skew in the x direction would be:
+		
+				<rect x="valuex" y ="valuey" width="valuewidth" height="valueheight" transform="function Here(parameters)"></rect>
+
+
+Curves: 
+	Bezier Curves and Arc
+	One of the shapes you were instructed to draw in the previous tutorial involved curves. In SVG there are mainly Two types of Curves. 
+	
+	One of the Curves, the Bezier Curve has two types of curves: Cubic Curve(C) and Quadratic Curve(Q)
+
+	The General format for the curves are:
+	
+	path d= "start_Pos X, start_Pos Y  
+	
+	C postion of curve from left side and right side (x_left, y_left, x_right, y_left)
+	
+	End_Pos X, End_pos Y"
+
+	and 
+
+	path d= "start_Pos X, start_Pos Y  
+	
+	Q postion of curve (x, y)
+	
+	End_Pos X, End_pos Y"
+
+
+	The other type of Curve is an Arc. The format for the Arc is:
+	
+	path d="M coordinate x and y for center of arc, arc_flag sweep_flag, x,y"
+
+	Due to the complexity of the curve nature, I would suggest using an online svg curve vizualizer such as 
+	https://codepen.io/explosion/pen/YGApwd or http://blogs.sitepointstatic.com/examples/tech/svg-curves/cubic-curve.html
+ 
+
+Problem 1)
+	Drawing stick ant figure using viewBox and ViewPort concepts. 
+
+Problem 2)
+	Draw a lotus flower using curves and transformation functions in svg 
+
+
+Bonus)
+	Create the rest of the Magic circles design using the shapes and transformation functions as per your design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
